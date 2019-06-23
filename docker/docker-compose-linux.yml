@@ -18,6 +18,8 @@ services:
       - NODE_ENV=test
     volumes:
       - ./:/var/www/startup-surveys-server
+    ports:
+      - 3000:3000
     networks:
       startup-surveys:
         ipv4_address: 173.18.215.10

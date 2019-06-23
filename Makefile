@@ -48,3 +48,16 @@ docker-backend-bash:
 
 docker-check-project:
 	${DOCKER_SERVER_EXEC} npm run eslint
+	make docker-npm-build
+	make check-project-not-committed-changes
+
+check-project-not-committed-changes:
+	/bin/bash ./ci-scripts/check-project-not-committed-changes.sh
+
+push-to-master:
+	make docker-check-project
+	git push master
+
+deploy-heroku:
+	make docker-check-project
+	git push heroku master

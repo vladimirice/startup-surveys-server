@@ -1,0 +1,6 @@
+{
+  "googleOauth": {
+    "clientID": "12345",
+    "clientSecret": "12345"
+  }
+}

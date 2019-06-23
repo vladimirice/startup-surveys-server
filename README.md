@@ -3,18 +3,18 @@
 ## Infrastructure
 
 ### Development
+[Development URL](http://localhost:3000/)
+
 * Docker
 * PM2
 
-
 ### Production
-
+[Heroku production URL](https://floating-plateau-24086.herokuapp.com/)
 
 ## How to install
 
 ```
-    make sudo-set-hosts-linux
     make init-project-linux
 ```
 
-[Server URL](http://startup-surveys-server:3000/)
+

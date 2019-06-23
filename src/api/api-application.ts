@@ -2,12 +2,9 @@ const express = require('express');
 
 const app = express();
 
-// @ts-ignore
-app.get('/', (req, res) => {
-  res.send({
-    success: 'almost done and live update',
-  });
-});
+const googleOauthRouter = require('../auth/router/google-oauth-router');
+
+app.use('/auth/google', googleOauthRouter);
 
 app.listen(process.env.PORT);
 
