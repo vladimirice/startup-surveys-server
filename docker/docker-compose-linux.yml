@@ -1,0 +1,23 @@
+version: '3.3'
+
+networks:
+  startup-surveys:
+    ipam:
+      driver: default
+      config:
+        - subnet: 173.18.215.0/24
+
+services:
+  server:
+    container_name: startup-surveys-server
+    build:
+      dockerfile: ./docker/server/Dockerfile
+      context: ./
+    working_dir: /var/www/startup-surveys-server
+    environment:
+      - NODE_ENV=test
+    volumes:
+      - ./:/var/www/startup-surveys-server
+    networks:
+      startup-surveys:
+        ipv4_address: 173.18.215.10
