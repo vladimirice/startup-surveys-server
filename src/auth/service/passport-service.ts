@@ -30,7 +30,8 @@ const googleStrategy = new GoogleStrategy(googleStrategyConfig,
     if (existing) {
       done(null, existing);
     } else {
-      const model = new UserModel({ googleId: profile.id }).save();
+      const model = new UserModel({ googleId: profile.id });
+      await model.save();
 
       done(null, model);
     }
