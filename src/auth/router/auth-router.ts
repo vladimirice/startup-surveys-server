@@ -1,10 +1,8 @@
-import { Request, Response } from 'express';
-
 const express = require('express');
 
 const router = express.Router();
 
-router.get('/logout', (req: Request, res: Response) => {
+router.get('/logout', (req: any, res: any) => {
   req.logout();
 
   res.send({
