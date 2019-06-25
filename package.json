@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A sample startup surveys server (Node.JS) part",
   "repository": "https://github.com/vladimirice/startup-surveys-server",
-  "main": "build/api/api-application.js",
+  "main": "build/api/api-bin.js",
   "engines": {
     "node": "12.2.0",
     "npm": "6.9.0"
   },
   "scripts": {
-    "start": "node ./build/api/api-application.js",
+    "start": "node ./build/api/api-bin.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "tsc-watch": "tsc --watch",
