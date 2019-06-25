@@ -1,3 +1,5 @@
+import { Request, Response } from 'express';
+
 import { passport } from '../service/passport-service';
 
 const express = require('express');
@@ -9,7 +11,7 @@ router.get('/', passport.authenticate('google', {
 }));
 
 // @ts-ignore ''
-router.get('/callback', passport.authenticate('google'), (req: any, res: any) => {
+router.get('/callback', passport.authenticate('google'), (req: Request, res: Response) => {
   res.send({
     success: true,
   });

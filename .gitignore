@@ -23,6 +23,4 @@ docker-compose.yml
 build/*
 
 #config
-config/test.json
-config/staging.json
-config/production.json
+config/test.js

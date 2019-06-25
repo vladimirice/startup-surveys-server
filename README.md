@@ -9,7 +9,7 @@
 * PM2
 
 ### Production
-[Heroku production URL](https://floating-plateau-24086.herokuapp.com/)
+[Heroku production URL](http://startup-surveys.sunarmy.pro/)
 
 ## How to install
 

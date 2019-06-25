@@ -23,3 +23,9 @@ services:
     networks:
       startup-surveys:
         ipv4_address: 173.18.215.10
+  mongo:
+    container_name: mongo
+    image: mongo:4.0.8
+    networks:
+      startup-surveys:
+        ipv4_address: 173.18.215.20

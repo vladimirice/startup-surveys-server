@@ -26,6 +26,6 @@ function getAppConfig(nameSuffix, script, port) {
 
 module.exports = {
   apps: [
-    getAppConfig('api-application', '/api/api-application.js', 3000),
+    getAppConfig('api-application', '/api/api-bin.js', 3000),
   ],
 };
