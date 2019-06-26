@@ -2,8 +2,12 @@
 
 ## Infrastructure
 
+### Servers
+* MongoDB - as an example of this database usage. In the real projects PostgreSQL is chosen.
+
 ### Development
 [Development URL](http://localhost:3000/)
+
 
 * Docker containers
 * PM2 process manager
