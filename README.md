@@ -5,8 +5,8 @@
 ### Development
 [Development URL](http://localhost:3000/)
 
-* Docker
-* PM2
+* Docker containers
+* PM2 process manager
 
 ### Production
 [Heroku production URL](http://startup-surveys.sunarmy.pro/)
@@ -17,4 +17,7 @@
     make init-project-linux
 ```
 
+## Features
+* OAuth (Google)
+* cookie-based sessions
 

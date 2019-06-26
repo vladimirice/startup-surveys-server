@@ -1,3 +1,5 @@
+import CorsHelper = require('./helpers/cors-helper');
+
 const express = require('express');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
@@ -9,6 +11,8 @@ const app = express();
 require('../mongo/client/mongo-client');
 // eslint-disable-next-line node/no-missing-require
 require('../mongo/models/users');
+
+CorsHelper.addRegularCors(app);
 
 app.use(
   cookieSession({

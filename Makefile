@@ -27,6 +27,9 @@ docker-npm-ci:
 docker-typescript-watch:
 	${DOCKER_SERVER_EXEC} npm run tsc-watch
 
+docker-typescript:
+	${DOCKER_SERVER_EXEC} npm run tsc
+
 docker-npm-build:
 	${DOCKER_SERVER_EXEC} npm run build
 

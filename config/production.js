@@ -8,5 +8,8 @@ module.exports = {
   },
   sessionCookie: {
     secret: process.env.sessionCookie_secret,
-  }
+  },
+  servers: {
+    client: 'http://startup-surveys.sunarmy.pro',
+  },
 };
