@@ -1,11 +1,16 @@
-const mongoose = require('mongoose');
+import mongoose, { Schema, Document } from 'mongoose';
 
-const { Schema } = mongoose;
+export interface IUser extends Document {
+  googleId: string;
+  credits:  number;
+}
 
 const usersSchema = new Schema({
   googleId: String,
+  credits: {
+    type: Number,
+    default: 0,
+  },
 });
 
-mongoose.model('users', usersSchema);
-
-export {};
+mongoose.model<IUser>('users', usersSchema);

@@ -18,7 +18,7 @@ module.exports = {
       'http://startup-surveys.sunarmy.pro',
     ],
   },
-  stripe: {
+  stripeConfig: {
     publishableKey: '12345',
     secretKey: '12345',
   }

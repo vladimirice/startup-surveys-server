@@ -25,3 +25,7 @@
 * OAuth (Google)
 * cookie-based sessions
 
+
+## TODO
+* Move credits price to the MongoDb and fetch the data from it
+* Add RequestWithUser to all desired express requests

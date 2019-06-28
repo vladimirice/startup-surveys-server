@@ -9,7 +9,7 @@ module.exports = {
   sessionCookie: {
     secret: process.env.sessionCookie_secret,
   },
-  stripe: {
+  stripeConfig: {
     publishableKey: process.env.stripe_publishableKey,
     secretKey: process.env.stripe_secretKey,
   },

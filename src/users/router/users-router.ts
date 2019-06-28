@@ -1,11 +1,14 @@
-import { Response } from 'express';
+import { Request, Router, Response } from 'express';
 
 const express = require('express');
 
-const router = express.Router();
+const router: Router = express.Router();
 
-router.get('/current', (req: any, res: Response) => {
-  res.send(req.user);
+router.get('/current', (req: Request, res: Response) => {
+  // @ts-ignore
+  const { user } = req;
+
+  res.send(user);
 });
 
 export = router;

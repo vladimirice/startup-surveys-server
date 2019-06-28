@@ -1,10 +1,10 @@
-import { Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
 
 import { passport } from '../service/passport-service';
 
 const express = require('express');
 
-const router = express.Router();
+const router: Router = express.Router();
 const { servers } = require('config');
 
 router.get('/', passport.authenticate('google', {
