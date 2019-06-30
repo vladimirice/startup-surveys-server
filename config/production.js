@@ -13,6 +13,9 @@ module.exports = {
     publishableKey: process.env.stripe_publishableKey,
     secretKey: process.env.stripe_secretKey,
   },
+  sendGridConfig: {
+    secretKey: process.env.sendGrid_secretKey,
+  },
   servers: {
     client: 'http://startup-surveys.sunarmy.pro',
   },

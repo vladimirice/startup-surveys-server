@@ -48,14 +48,12 @@ module.exports = {
         "no-await-in-loop": "off",
         "key-spacing": "off",
         "sonarjs/no-duplicate-string": "off",
-        "jest/no-disabled-tests": "off",
         "semi-style": "off",
         "jest/valid-expect": "off",
-        "no-bitwise": "off",
         "no-prototype-builtins": "off",
         "no-continue": "off",
-        "max-len": "off",
         "unicorn/prevent-abbreviations": "off",
+        'node/no-missing-require': "off", // does not work property for require inside Typescript files
       }
     }
   ]

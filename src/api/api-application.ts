@@ -8,10 +8,9 @@ const bodyParser    = require('body-parser');
 const { sessionCookieConfig } = require('config');
 
 const app = express();
-// eslint-disable-next-line node/no-missing-require
 require('../mongo/client/mongo-client');
-// eslint-disable-next-line node/no-missing-require
 require('../mongo/models/users');
+require('../surveys/models/surveys');
 
 CorsHelper.addRegularCors(app);
 
@@ -31,11 +30,13 @@ import googleOauthRouter  = require('../auth/router/google-oauth-router');
 import usersRouter        = require('../users/router/users-router');
 import authRouter         = require('../auth/router/auth-router');
 import stripeRouter       = require('../stripe/router/stripe-router');
+import surveysRouter      = require('../surveys/router/surveys-router');
 
 app.use('/auth/google', googleOauthRouter);
 app.use('/users',       usersRouter);
 app.use('/auth',        authRouter);
 app.use('/stripe',      stripeRouter);
+app.use('/surveys',     surveysRouter);
 
 export {
   app,
