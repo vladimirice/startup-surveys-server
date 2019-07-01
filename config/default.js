@@ -21,5 +21,9 @@ module.exports = {
   stripeConfig: {
     publishableKey: '12345',
     secretKey: '12345',
-  }
+  },
+  mailgunConfig: {
+    domain: 'mg-startup-surveys.sunarmy.pro',
+    apiKey: '12345',
+  },
 };
