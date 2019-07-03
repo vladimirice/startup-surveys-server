@@ -13,7 +13,7 @@ router.get('/', passport.authenticate('google', {
 
 // @ts-ignore
 router.get('/callback', passport.authenticate('google'), (req: Request, res: Response) => {
-  res.redirect(`${servers.client}/surveys`);
+  res.redirect(servers.client);
 });
 
 export = router;
