@@ -12,6 +12,7 @@ class MailgunClient {
       to,
       subject,
       html: body,
+      'o:tracking': false,
     };
 
     return this.getClient().messages().send(data);

@@ -32,7 +32,9 @@ router.get('/:surveyId/:answer', async (req: any, res: Response) => {
 router.get('/', loginIsRequired, async (req: IRequestWithUser, res: Response) => {
   const surveys: ISurvey =
     await SurveyModel.find({ _user: req.user.id })
-      .select({ recipients: false });
+      .select({ recipients: false })
+      .sort({ _id: -1 })
+  ;
 
   res.send(surveys);
 });
