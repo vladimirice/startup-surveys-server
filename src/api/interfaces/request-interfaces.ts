@@ -5,6 +5,9 @@ interface IRequestWithUser extends Request {
   user: IUser;
 }
 
+interface RequestBody {}
+
 export {
+  RequestBody,
   IRequestWithUser,
 };

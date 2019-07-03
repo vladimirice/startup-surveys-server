@@ -14,7 +14,8 @@ module.exports = {
     secretKey: process.env.stripe_secretKey,
   },
   servers: {
-    client: 'http://startup-surveys.sunarmy.pro',
+    client: 'https://startup-surveys.sunarmy.pro',
+    server: 'https://startup-surveys-server.sunarmy.pro'
   },
   mailgunConfig: {
     apiKey: process.env.mailgun_apiKey,

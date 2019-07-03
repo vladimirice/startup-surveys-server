@@ -11,11 +11,12 @@ module.exports = {
   },
   servers: {
     client: 'http://localhost:3000',
+    server: 'http://localhost:5000',
   },
   cors: {
     allowedOrigins: [
       'http://localhost:3000',
-      'http://startup-surveys.sunarmy.pro',
+      'https://startup-surveys.sunarmy.pro',
     ],
   },
   stripeConfig: {

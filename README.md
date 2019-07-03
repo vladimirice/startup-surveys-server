@@ -1,28 +1,23 @@
-mr.vladimir.ice@gmail.com
-
-
 # Startup surveys server
 
-## Notice
-* This is simplified backend application. Main goal - to provide a backend functionality for the React part of the 
-applications. This architecture solutions are not optimal here.
+Website: [startup-surveys.sunarmy.pro](https://startup-surveys.sunarmy.pro/)
 
-## Infrastructure
+This is a very simplified backend application for the 
+[startup-surveys frontend application](https://github.com/vladimirice/startup-surveys-client).
+This repository does not represent backend skills. For the backend skills representation 
+please observe the [u.community backend application](https://github.com/UOSnetwork/ucom.backend)
 
-### Servers
-* MongoDB - as an example of this database usage. In the real projects PostgreSQL is chosen.
+## Features
+* An OAuth (Google)
+* Cookie-based sessions
+* Surveys that are stored inside the MongoDb
+* Mailgun integration
+* Responses count
 
-### Development
-[Development URL](http://localhost:3000/)
-
-
-* Docker containers
+## Architecture
+* Database - MongoDB
+* Docker Compose for the development
 * PM2 process manager
-
-### Production
-[Heroku production URL](http://startup-surveys.sunarmy.pro/)
-
-MongoDb cloud hosting
 
 ## How to install
 
@@ -30,19 +25,12 @@ MongoDb cloud hosting
     make init-project-linux
 ```
 
-## Features
-* An OAuth (Google)
-* A cookie-based sessions
-* Surveys that are stored inside MongoDb
+[Development URL (localhost)](http://localhost:3000/) 
 
-## TODO
-* Send actual emails after survey creation
-* Catch yes, no responses and update MongoDb stats
-* Styles for thanks for your reply + reply stats
-* Add RequestWithUser to all desired express requests
-* Documentation - workflow and text explanations.
-
-## Future improvements 
-* Send emails in batch. In order to track who responds to the message - use Mailgun Hooks feature.
+## Possible improvements 
+* Use a PostgreSQL, not MongoDB.
+* Send emails in batch. To track who responds to the message - use Mailgun Hooks feature.
 * Send emails on the background
+* Track who responds to the survey, avoid duplications
+* Surveys fields validation
 * Autotests
